@@ -38,7 +38,7 @@ class database{
 	}
  
 	function update($id,$kabupaten){
-		mysql_query("update kabupatens set kabupaten ='$kabupaten' where id ='$id'");
+		mysql_query($this->con,"update kabupatens set kabupaten ='$kabupaten' where id ='$id'");
 	}
 	
  
